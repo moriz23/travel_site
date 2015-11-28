@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
 
-  
   //Body panels hide
   $(".hotel-search").hide();
 
@@ -19,10 +18,7 @@ $(document).ready(function(){
       return;
     };
     
-
     var location = $("#location").val().trim();
-
-   
 
     // Name of destination appears
     var destinationLocation = $(".hotel-location");
