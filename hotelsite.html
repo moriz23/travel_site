@@ -3,7 +3,9 @@
 <head>
   <title>Hotel search page</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/classic.date.css">
+  <link rel="stylesheet" type="text/css" href="css/default.css">
+  <link rel="stylesheet" type="text/css" href="css/default.date.css">
+  <link rel="stylesheet" type="text/css" href="css/default.time.css">
   <link rel="stylesheet" type="text/css" href="css/hotelsite.css">
 </head>
 <body>
@@ -32,8 +34,8 @@
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
             <input type="text" class="form-control" id="location" placeholder="Destination">
-            <input type="text" class="form-control" id="checkin" placeholder="Check In">
-            <input type="text" class="form-control" id="checkout" placeholder="Check Out">
+            <input type="text" class="form-control datePicker" id="checkin" placeholder="Check In">
+            <input type="text" class="form-control datePicker" id="checkout" placeholder="Check Out">
           </div>
           <button type="submit" class="btn btn-default" id="submit">Search</button>
         </form>
@@ -86,5 +88,6 @@
   <script type="text/javascript" src="js/picker.time.js"></script>
   <script type="text/javascript" src="js/legacy.js"></script>
   <script type="text/javascript" src="js/hotelsite.js"></script>
+  <script type="text/javascript" src="js/datepicker.js"></script>
 </body>
 </html>
