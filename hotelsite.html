@@ -42,6 +42,7 @@
       </div>
     </div>
   </nav>
+  <!-- Carousel -->
   <div id="main-carousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -52,21 +53,21 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/hawaii.png" alt="Hawaii">
+        <img src="images/hawaii.png" alt="Hawaii" />
       <div class="carousel-caption">
       <h3 class="white-text">Hawaii</h3>
     </div>
     <div class="carousel-responsive"></div>
     </div>
     <div class="item">
-      <img src="images/dubai.png" alt="Dubai">
+      <img src="images/dubai.png" alt="Dubai" />
         <div class="carousel-caption">
           <h3 class="white-text">Dubai</h3>
         </div>
         <div class="carousel-responsive"></div>
     </div>
     <div class="item">
-      <img src="images/kangaroo.png" alt="Austrailia">
+      <img src="images/kangaroo.png" alt="Austrailia" />
     <div class="carousel-caption">
       <h3 class="white-text">Austrailia</h3>
     </div>
@@ -79,12 +80,12 @@
     <a class="right carousel-control" href="#main-carousel" data-slide="next">
       <span class="icon-next"</span>
     </a>
-  </div> <!-- End main-carousel -->
-  <div class="row">
-    <div class="col-md-2">
-      <div class="panel panel-primary hotelsearch">
-        <div class="panel-heading">Rating</div>
-        <div class="panel panel-body">
+  </div>
+  <!-- Star Ratings -->
+  <div class="col-md-4">
+    <div class="panel panel-default hotel-search">
+      <div class="panel-heading">Rating</div>
+        <div class="panel-body">
           <div class="form-group">
             <div class="row-fluid">
               <input type="checkbox" value=""> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -99,10 +100,71 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
   </div>
+    <!-- Amenities -->
+  <div class="col-md-4">
+    <div class="panel panel-default hotel-search">
+      <div class="panel-heading">Amenities</div>
+        <div class="panel-body">
+          <div class="form-group">
+            <div class="row-fluid">
+              <input type="checkbox" value="">
+              <br>
+              <input type="checkbox" value=""> 
+              <br>
+              <input type="checkbox" value=""> 
+              <br>
+              <input type="checkbox" value=""> 
+              <br>
+              <input type="checkbox" value=""> 
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+    <!-- Price -->
+  <div class="col-md-4">
+    <div class="panel panel-default hotel-search">
+      <div class="panel-heading">Price</div>
+        <div class="panel-body">
+          <div class="form-group">
+            <div class="row-fluid">
+              <input type="checkbox" value=""> 
+              <br>
+              <input type="checkbox" value=""> 
+              <br>
+              <input type="checkbox" value=""> 
+              <br>
+              <input type="checkbox" value=""> 
+              <br>
+              <input type="checkbox" value=""> 
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- Hotel Body -->
+  <div class="col-md-10">
+    <div class="panel panel-default hotel-search">
+      <div class="panel-heading">Hotels</div>
+        <div class=" panel-body">
+          <div class="row-fluid">
+            <img class="hotel-img img-responsive img-rounded" src="images/grand.png" />
+              <h4 class="hotel-title"><span class="hotel-location"></span> Grand Master Flex</h4>
+              <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal">More info</button>
+            </div>
+            <!-- Chinmay Put new image in this code and changed the hotel name, leave the classes and other syntax the same, I already added the css
 
+            <div class="row-fluid img-margin">
+                <img class="hotel-img img-responsive img-rounded" src="http://en.hotel-palaciodelmar.com/static/galerias/hotel/01-hotel-santander-sercotel-palacio-del-mar-fachada-foto.jpg" />
+                <h4 class="hotel-title"><span class="hotel-location"></span> Grand Master Flex</h4>
+                <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal">More info</button>
+            </div> -->
+          </div>
+        </div>
+    </div>
+  </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/picker.js"></script>
