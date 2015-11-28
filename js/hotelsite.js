@@ -18,9 +18,9 @@ $(document).ready(function(){
       return;
     };
     
+    // Name of destination appears
     var location = $("#location").val().trim();
 
-    // Name of destination appears
     var destinationLocation = $(".hotel-location");
     destinationLocation.replaceWith($("<span>").append(location));
 
