@@ -25,3 +25,8 @@
   margin-top: 10px;
 }
 
+/* Navbar */
+.alert {
+  position: relative;
+  left: 65px;
+}
