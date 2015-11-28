@@ -1,10 +1,28 @@
-$(document).ready (function (){
-  $(".alerts").hide();
+$(document).ready(function(){
 
-  $("#citySubmit").on ("click",function(e){
-    e.preventDefault(); // Without prevent default on submit button, Modal was not launched
+  
+  //Body panels hide
+  $(".hotel-search").hide();
 
-  }); //End of City Submit funtion, which calls the Modal to get input
+  //AlertDanger hide
+  $(".alert-danger").hide();
+
+  //Destination Name Search
+  $(".btn-default").on("click", function(e){
+    e.preventDefault();
+
+    
+
+    var location = $("#location").val().trim();
+
+   
+
+    // Name of destination appears
+    var destinationLocation = $(".hotel-location");
+    destinationLocation.replaceWith($("<span>").append(location));
+
+    $(".hotel-search").fadeIn(500);
+
+  }); // End #search-button click
 
 });
-
