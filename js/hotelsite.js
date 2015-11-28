@@ -1,4 +1,3 @@
-//alert ("Hi java script file is linked");
 $(document).ready (function (){
   $(".alerts").hide();
 
@@ -8,3 +7,4 @@ $(document).ready (function (){
   }); //End of City Submit funtion, which calls the Modal to get input
 
 });
+
