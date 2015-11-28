@@ -9,48 +9,40 @@
   <link rel="stylesheet" type="text/css" href="css/hotelsite.css">
 </head>
 <body>
-  <p> <h3>Hotel Search Site</h3></p> 
-   <div class="container">
-    <div class="row">
-      <div class="navbar navbar-default navbar-static-top" id="topnavBar">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brand</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">One more separated link</a></li>
+        </ul>
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Enter City to Search">
+            <input type="text" class="form-control" id="location" placeholder="Destination">
+            <input type="text" class="form-control datePicker" id="checkin" placeholder="Check In">
+            <input type="text" class="form-control datePicker" id="checkout" placeholder="Check Out">
           </div>
-          <button type="submit" class="btn btn-default btn-info" id="citySubmit" data-toggle="modal" data-target="#myModal">Submit</button> <!-- if the button type to be submit, add prevent default in jquery -->
+          <button type="submit" class="btn btn-default" id="submit">Search</button>
         </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="Sign In">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign In <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Sign In</a></li>
-            <li><a href="#">Register</a></li>
-          </ul>
-        </li>
-        <li class="MyBookings"> <!--Changed to test a button  -->
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Bookings <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">My profile</a></li>
-            <li><a href="#">Check Your Bookings</a></li>
-            <li><a href="#">View Print Your Bookings</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </li>
-        <li class="Help">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Self Service</a></li>
-            <li><a href="#">Frequently Asked Questions</a></li>
-            <li><a href="#">Profile Password Help</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </li>
-      </ul>
-      </div>  
       </div>
     </div>
+  </nav>
+  <!-- Carousel -->
   <div id="main-carousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -61,21 +53,21 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/hawaii.png" alt="Hawaii">
+        <img src="images/hawaii.png" alt="Hawaii" />
       <div class="carousel-caption">
       <h3 class="white-text">Hawaii</h3>
     </div>
     <div class="carousel-responsive"></div>
     </div>
     <div class="item">
-      <img src="images/dubai.png" alt="Dubai">
+      <img src="images/dubai.png" alt="Dubai" />
         <div class="carousel-caption">
           <h3 class="white-text">Dubai</h3>
         </div>
         <div class="carousel-responsive"></div>
     </div>
     <div class="item">
-      <img src="images/kangaroo.png" alt="Austrailia">
+      <img src="images/kangaroo.png" alt="Austrailia" />
     <div class="carousel-caption">
       <h3 class="white-text">Austrailia</h3>
     </div>
@@ -88,12 +80,12 @@
     <a class="right carousel-control" href="#main-carousel" data-slide="next">
       <span class="icon-next"</span>
     </a>
-  </div> <!-- End main-carousel -->
-  <div class="row">
-    <div class="col-md-2">
-      <div class="panel panel-primary hotelsearch">
-        <div class="panel-heading">Rating</div>
-        <div class="panel panel-body">
+  </div>
+  <!-- Star Ratings -->
+  <div class="col-md-4">
+    <div class="panel panel-default hotel-search">
+      <div class="panel-heading">Rating</div>
+        <div class="panel-body">
           <div class="form-group">
             <div class="row-fluid">
               <input type="checkbox" value=""> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -108,57 +100,71 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
   </div>
-
-  <div class="modal fade" id="myModal" data-backdrop="static">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Enter Check In &  Check Out Dates to Search</h4>
+    <!-- Amenities -->
+  <div class="col-md-4">
+    <div class="panel panel-default hotel-search">
+      <div class="panel-heading">Amenities</div>
+        <div class="panel-body">
+          <div class="form-group">
+            <div class="row-fluid">
+              <input type="checkbox" value="">
+              <br>
+              <input type="checkbox" value=""> 
+              <br>
+              <input type="checkbox" value=""> 
+              <br>
+              <input type="checkbox" value=""> 
+              <br>
+              <input type="checkbox" value=""> 
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-            <div class="input-group">
-              <span class="input-group-addon" id="citySearch" style="size:1em">*City</span>
-              <input type="text" class="form-control" placeholder="City" aria-describedby="sizing-addon2">
-            </div>
-            <div class="input-group">
-              <span class="input-group-addon" id="dateCheckIn" style="size:1em">*Check In Date</span>
-              <input type="text" class="form-control" placeholder="Check In Date" aria-describedby="sizing-addon2">
-            </div>
-            <div class="input-group">
-              <span class="input-group-addon" id="dateCheckOut" style="size:1em">*Check Out Date</span>
-              <input type="text" class="form-control" placeholder="Check In Date" aria-describedby="sizing-addon2">
-            </div>
-            <div class="input-group">
-              <span class="input-group-addon" id="starRating" style="size:1em">Star Ratings</span>
-              <input type="text" class="form-control" placeholder="What star hotels you are looking for?" aria-describedby="sizing-addon2">
-            </div>
-            <div class="input-group">
-              <span class="input-group-addon" id="Amenities" style="size:1em">Amenities</span>
-              <input type="text" class="form-control" placeholder="Check In Date" aria-describedby="sizing-addon2">
-            </div>
-            <div class="input-group">
-              <span class="input-group-addon" id="Price" style="size:1em">Price ($)</span>
-              <input type="text" class="form-control" placeholder="Check In Date" aria-describedby="sizing-addon2">
-            </div>
-          <p>
-            Please enter the mandatory values (marked * ) to search. 
-          </p>
-          <!-- <p>
-            Please enter the mandatory values (marked * ) to search <a href="#" data-toggle="tooltip" title="Some text!">text</a>
-          </p> -->
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-info" data-dismiss="modal">Close</button>
-          <button class="btn btn-primary">Search</button>
-        </div>
-      </div>
     </div>
   </div>
+    <!-- Price -->
+  <div class="col-md-4">
+    <div class="panel panel-default hotel-search">
+      <div class="panel-heading">Price</div>
+        <div class="panel-body">
+          <div class="form-group">
+            <div class="row-fluid">
+              <input type="checkbox" value=""> 
+              <br>
+              <input type="checkbox" value=""> 
+              <br>
+              <input type="checkbox" value=""> 
+              <br>
+              <input type="checkbox" value=""> 
+              <br>
+              <input type="checkbox" value=""> 
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- Hotel Body -->
+  <div class="col-md-10">
+    <div class="panel panel-default hotel-search">
+      <div class="panel-heading">Hotels</div>
+        <div class=" panel-body">
+          <div class="row-fluid">
+            <img class="hotel-img img-responsive img-rounded" src="images/grand.png" />
+              <h4 class="hotel-title"><span class="hotel-location"></span> Grand Master Flex</h4>
+              <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal">More info</button>
+            </div>
+            <!-- Chinmay Put new image in this code and changed the hotel name, leave the classes and other syntax the same, I already added the css
 
+            <div class="row-fluid img-margin">
+                <img class="hotel-img img-responsive img-rounded" src="http://en.hotel-palaciodelmar.com/static/galerias/hotel/01-hotel-santander-sercotel-palacio-del-mar-fachada-foto.jpg" />
+                <h4 class="hotel-title"><span class="hotel-location"></span> Grand Master Flex</h4>
+                <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal">More info</button>
+            </div> -->
+          </div>
+        </div>
+    </div>
+  </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/picker.js"></script>
