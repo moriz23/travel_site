@@ -1,1 +1,0 @@
-//alert ("Hi java script file is linked");
