@@ -7,6 +7,7 @@ $(document).ready(function(){
   //AlertDanger hide
   $(".alert-danger").hide();
 
+  
   //Destination Name Search
   $(".btn-default").on("click", function(e){
     e.preventDefault();
@@ -22,9 +23,12 @@ $(document).ready(function(){
     var location = $("#location").val().trim();
 
     var destinationLocation = $(".hotel-location");
-    destinationLocation.replaceWith($("<span>").append(location));
+    destinationLocation.replaceWith($("<span>").addClass("hotel-location").append(location));
+    destinationLocation.append(location);
 
     $(".hotel-search").fadeIn(500);
+
+    $("#location").val("").focus();
 
   });
 
