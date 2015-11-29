@@ -15,7 +15,7 @@
       <div class="navbar navbar-default navbar-static-top" id="topnavBar">
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Enter City to Search">
+            <input type="text" class="form-control" placeholder="Enter City to Search" id="cityInput">
           </div>
           <button type="submit" class="btn btn-default btn-info" id="citySubmit" data-toggle="modal" data-target="#myModal">Submit</button> <!-- if the button type to be submit, add prevent default in jquery -->
         </form>
@@ -122,27 +122,53 @@
         <div class="modal-body">
             <div class="input-group">
               <span class="input-group-addon" id="citySearch" style="size:1em">*City</span>
-              <input type="text" class="form-control" placeholder="City" aria-describedby="sizing-addon2">
+              <input type="text" class="form-control" placeholder="City" aria-describedby="sizing-addon2" id="modalCity">
             </div>
             <div class="input-group">
               <span class="input-group-addon" id="dateCheckIn" style="size:1em">*Check In Date</span>
-              <input type="text" class="form-control" placeholder="Check In Date" aria-describedby="sizing-addon2">
+              <input type="text" class="form-control datepicker" placeholder="Check In Date" aria-describedby="sizing-addon2" id="modalCheckIn">
             </div>
             <div class="input-group">
               <span class="input-group-addon" id="dateCheckOut" style="size:1em">*Check Out Date</span>
-              <input type="text" class="form-control" placeholder="Check In Date" aria-describedby="sizing-addon2">
+              <input type="text" class="form-control datepicker" placeholder="Check Out Date" aria-describedby="sizing-addon2" id="modalCheckOut">
             </div>
-            <div class="input-group">
-              <span class="input-group-addon" id="starRating" style="size:1em">Star Ratings</span>
+              <!--
+              <div class="input-group">
               <input type="text" class="form-control" placeholder="What star hotels you are looking for?" aria-describedby="sizing-addon2">
+              -->
+            <div class="input-group">
+              <span class="input-group-addon"  id="starRating" style="size:1em">Star Ratings</span>
+              <div class="dropdown" >
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="size:2em">
+                  Dropdown
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">1 Star Hotels</a></li>
+                  <li><a href="#">2 Star Hotels</a></li>
+                  <li><a href="#">3 Star Hotels</a></li>
+                  <li><a href="#">4 Star Hotels</a></li>
+                  <li><a href="#">5 Star Hotels</a></li>
+                </ul>
+              </div>
             </div>
             <div class="input-group">
               <span class="input-group-addon" id="Amenities" style="size:1em">Amenities</span>
-              <input type="text" class="form-control" placeholder="Check In Date" aria-describedby="sizing-addon2">
+              <div class="dropdown" >
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="size:2em">
+                  Dropdown
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Free Wi-fi</a></li>
+                  <li><a href="#">Swimming Pool</a></li>
+                  <li><a href="#">In-Room Service</a></li>
+                </ul>
+              </div>
             </div>
             <div class="input-group">
               <span class="input-group-addon" id="Price" style="size:1em">Price ($)</span>
-              <input type="text" class="form-control" placeholder="Check In Date" aria-describedby="sizing-addon2">
+              <input type="text" class="form-control" placeholder="Price" aria-describedby="sizing-addon2">
             </div>
           <p>
             Please enter the mandatory values (marked * ) to search. 
@@ -152,8 +178,9 @@
           </p> -->
         </div>
         <div class="modal-footer">
-          <button class="btn btn-info" data-dismiss="modal">Close</button>
-          <button class="btn btn-primary">Search</button>
+          <p id="modalFooterMessage">For best search result enter all values !!</p>
+          <button class="btn btn-info btn-group-sm" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary btn-group-sm" id="modalSearch">Search</button>
         </div>
       </div>
     </div>
