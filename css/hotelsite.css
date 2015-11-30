@@ -10,6 +10,13 @@
   height: 618px;
 }
 
+h3 {
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+  text-shadow: 2px 2px 5px #000;
+}
+
+
 /* Hotel Search Panel */
 .hotel-img {
   display: inline-block;
@@ -54,9 +61,3 @@
 
 }
 
-/* Carousel */
-h3 {
-  font-family: 'Lobster', cursive;
-  font-size: 3em;
-  text-shadow: 2px 2px 5px #000;
-}
