@@ -30,3 +30,33 @@
   position: relative;
   left: 65px;
 }
+
+.navbar-inverse {
+  background-color: #3d2866;
+}
+
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+  text-shadow: 2px 2px 5px #000;
+}
+
+#font-hotel {
+  color: #fff;
+}
+
+#panel-title {
+  background-color: #a38ecc;
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+
+}
+
+/* Carousel */
+h3 {
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+  text-shadow: 2px 2px 5px #000;
+}
