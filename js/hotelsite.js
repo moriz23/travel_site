@@ -20,11 +20,9 @@ $(document).ready(function(){
     };
     
     // Name of destination appears
-    var location = $("#location").val().trim();
 
     var destinationLocation = $(".hotel-location");
-    destinationLocation.replaceWith($("<span>").addClass("hotel-location").append(location));
-    destinationLocation.append(location);
+    destinationLocation.replaceWith($("<span>").addClass("hotel-location").append(city));
 
     $(".hotel-search").fadeIn(500);
 
@@ -43,7 +41,7 @@ $(document).ready(function(){
     $(".alert-danger").fadeOut();
   });
 
-  /////------------Added by Chinmay for Advance Search ------------
+  /* ------------Added by Chinmay for Advance Search ------------
   //Advance search option
 
   $("#citySubmit").on ("click",function(e){
@@ -111,5 +109,5 @@ $(document).ready(function(){
     //$(this).parents('.btn-default').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
   }); //Change text in the drop down 
 
-  ///////End section for Advance Search - Updated by Chinmay---------
+  ///////End section for Advance Search - Updated by Chinmay---------*/
 });
