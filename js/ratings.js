@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-   $("#five").on("click", function() {
+   $(".five").on("click", function() {
     $("#five-hotel").fadeIn(500);
     $("#four-hotel").fadeOut(500);
     $("#three-hotel").fadeOut(500);
@@ -9,7 +9,7 @@ $(document).ready(function(){
     return;
   });
 
-   $("#four").on("click", function() {
+   $(".four").on("click", function() {
     $("#five-hotel").fadeOut(500);
     $("#four-hotel").fadeIn(500);
     $("#three-hotel").fadeOut(500);
@@ -18,7 +18,7 @@ $(document).ready(function(){
     return;
   });
 
-   $("#three").on("click", function() {
+   $(".three").on("click", function() {
     $("#five-hotel").fadeOut(500);
     $("#four-hotel").fadeOut(500);
     $("#three-hotel").fadeIn(500);
@@ -27,7 +27,7 @@ $(document).ready(function(){
     return;
   });
 
-   $("#two").on("click", function() {
+   $(".two").on("click", function() {
     $("#five-hotel").fadeOut(500);
     $("#four-hotel").fadeOut(500);
     $("#three-hotel").fadeOut(500);
@@ -36,7 +36,7 @@ $(document).ready(function(){
     return;
   });
 
-   $("#one").on("click", function() {
+   $(".one").on("click", function() {
     $("#five-hotel").fadeOut(500);
     $("#four-hotel").fadeOut(500);
     $("#three-hotel").fadeOut(500);
