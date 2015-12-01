@@ -64,4 +64,27 @@ h3 {
   text-shadow: 2px 2px 5px #000;
 
 }
+/*============Chinmay Added css below*/
+
+#citySearch, 
+#dateCheckIn, 
+#dateCheckOut, 
+#starRating, 
+#Amenities, 
+#Price {
+    text-align: left;
+    /*float: left; */
+    width: 135px;
+}
+
+#modalFooterMessage {
+    text-align: left;
+    text-decoration: none;
+}
+#buttondropdownMenu1,
+#buttondropdownMenu2,
+#buttondropdownMenu3 {
+  text-align: left;
+  width: 173px;
+}
 
