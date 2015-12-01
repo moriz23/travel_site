@@ -39,6 +39,7 @@
             <input type="text" class="form-control datePicker" id="checkout" placeholder="Check Out">
           </div>
           <button type="submit" class="btn btn-default" id="submit">Search</button>
+          <button type="submit" class="btn btn-danger btn-info" id="citySubmit" data-toggle="modal" data-target="#myModal">Advance Search</button> <!-- if the button type to be submit, add prevent default in jquery -->
         </form>
       </div>
       <div class="col-md-4">
@@ -192,6 +193,86 @@
           </div>
         </div>
     </div>
+    <div class="modal fade" id="myModal" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Enter Check In &  Check Out Dates to Search</h4>
+        </div>
+        <div class="modal-body">
+            <div class="input-group">
+              <span class="input-group-addon" id="citySearch" style="size:1em">*City</span>
+              <input type="text" class="form-control" placeholder="City" aria-describedby="sizing-addon2" id="modalCity">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="dateCheckIn" style="size:1em">*Check In Date</span>
+              <input type="text" class="form-control datepicker" placeholder="Check In Date" aria-describedby="sizing-addon2" id="modalCheckIn">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="dateCheckOut" style="size:1em">*Check Out Date</span>
+              <input type="text" class="form-control datepicker" placeholder="Check Out Date" aria-describedby="sizing-addon2" id="modalCheckOut">
+            </div>
+              <!--
+              <div class="input-group">
+              <input type="text" class="form-control" placeholder="What star hotels you are looking for?" aria-describedby="sizing-addon2">
+              -->
+            <div class="input-group">
+              <span class="input-group-addon"  id="starRating" style="size:1em">Star Ratings</span>
+              <div class="dropdown" >
+                <button class="btn btn-default dropdown-toggle" type="button" id="buttondropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Select Star Rating
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="uldropdownMenu1">
+                  <li><a href="#">&nbsp 1 Star Hotels</a></li>
+                  <li><a href="#">&nbsp 2 Star Hotels</a></li>
+                  <li><a href="#">&nbsp 3 Star Hotels</a></li>
+                  <li><a href="#">&nbsp 4 Star Hotels</a></li>
+                  <li><a href="#">&nbsp 5 Star Hotels</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="Amenities" style="size:1em">Amenities</span>
+              <div class="dropdown" >
+                <button class="btn btn-default dropdown-toggle multiselect" type="button" id="buttondropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Select Amenities
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="uldropdownMenu1" multiple="multiple">
+                  <li><a href="#">&nbsp Free Wi-fi</a></li>
+                  <li><a href="#">&nbsp Swimming Pool</a></li>
+                  <li><a href="#">&nbsp In-Room Service</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="Price" style="size:1em">Price ($)/ Night</span>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle multiselect" type="button" id="buttondropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Select Price Range
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="uldropdownMenu3" multiple="multiple">
+                  <li><a href="#">&nbsp $0 - $50 &nbsp</a></li>
+                  <li><a href="#">&nbsp $50 - $100 &nbsp</a></li>
+                  <li><a href="#">&nbsp >$100 &nbsp</a></li>
+                </ul>
+              </div>
+            </div>
+          <p>
+            Please enter the mandatory values (marked * ) to search. 
+          </p>
+        </div>
+        <div class="modal-footer">
+          <p id="modalFooterMessage">For best search result enter all values !!</p>
+          <button class="btn btn-info btn-group-sm" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary btn-group-sm" id="modalSearch">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
