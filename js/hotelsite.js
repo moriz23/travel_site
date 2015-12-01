@@ -41,11 +41,13 @@ $(document).ready(function(){
     $(".alert-danger").fadeOut();
   });
 
-  /* ------------Added by Chinmay for Advance Search ------------
+  //------------Added by Chinmay for Advance Search ------------
   //Advance search option
 
   $("#citySubmit").on ("click",function(e){
     e.preventDefault(); // Without prevent default on submit button, Modal was not launched
+
+    $(".alert-danger").slideDown(10000000000);
 
     var cityInput;
     cityInput = $("#cityInput").val();
@@ -109,5 +111,5 @@ $(document).ready(function(){
     //$(this).parents('.btn-default').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
   }); //Change text in the drop down 
 
-  ///////End section for Advance Search - Updated by Chinmay---------*/
+  ///////End section for Advance Search - Updated by Chinmay---------
 });

@@ -56,14 +56,14 @@
       <li data-target="#main-carousel" data-slide-to="2"></li>
     </ol>
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+  <div class="carousel-inner">
       <div class="item active">
         <img src="images/hawaii.png" alt="Hawaii" />
-      <div class="carousel-caption">
-      <h3 class="white-text">Hawaii</h3>
-    </div>
-    <div class="carousel-responsive"></div>
-    </div>
+        <div class="carousel-caption">
+          <h3 class="white-text">Hawaii</h3>
+        </div>
+        <div class="carousel-responsive"></div>
+      </div>
     <div class="item">
       <img src="images/dubai.png" alt="Dubai" />
         <div class="carousel-caption">
@@ -73,9 +73,9 @@
     </div>
     <div class="item">
       <img src="images/kangaroo.png" alt="Austrailia" />
-    <div class="carousel-caption">
-      <h3 class="white-text">Austrailia</h3>
-    </div>
+      <div class="carousel-caption">
+        <h3 class="white-text">Austrailia</h3>
+      </div>
     <div class="carousel-responsive"></div>
     </div>
   <!-- Controls -->
@@ -149,6 +149,34 @@
         </div>
     </div>
   </div>
+  <div class="modal fade" id="moreInfoModal" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">More Info about the Hotel</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+            Ticons, Millennium Broadway Hotel provides brilliant modern facilities and services to suit any visitor's needs.
+
+            icons, Millennium Broadway Hotel provides brilliant modern facilities and services to suit any visitor's needs.
+
+            About the Hotel
+
+            The Millennium Broadway Hotel – Times Square, at 145 West 44th Street, is at the center of the action and benefits from plentiful transport connections, making it easy to reach from the airport or throughout the city. With childcare, a 24-hour fitness center, high-speed internet and many other services, Millennium Broadway is capable of providing guests with everything they need for a comfortable stay. The hotel also boasts fantastic business facilities, including the Millennium Conference Center, and the landmark Hudson Theater is available as the ideal venue for weddings and other social events.
+
+            Experience New York
+
+            With only a two-minute walk hotel visitors can reach the dazzling lights of Times Square, the best place to get a feel for this city's relentless energy with its Broadway shows and high-end stores. Shoppers will also enjoy the nearby shopping street Fifth Avenue. Many nearby landmarks pay homage to New York's glorious history, including the Rockefeller Center, Grand Central Terminal and the Empire State Building, which offers breathtaking views of the New York City skyline.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-info" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Hotel Body -->
   <div class="col-md-10">
     <div class="panel panel-default hotel-search">
@@ -157,117 +185,117 @@
           <div class="row-fluid" id="five-hotel">
             <img class="hotel-img img-responsive img-rounded" src="images/grand.png" />
               <h4 class="hotel-title"><span class="hotel-location"></span> Grand Master Flex</h4>
-              <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal">More info</button>
+              <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal" data-target="#moreInfoModal">More info</button>
           </div>
           <br/>
           <div class="row-fluid" id="four-hotel">
             <img class="hotel-img img-responsive img-rounded" src="images/feat-Florida.jpg" />
               <h4 class="hotel-title"><span class="hotel-location"></span> The Jumpman Supreme Hotel</h4>
-              <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal">More info</button>
+              <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal" data-target="#moreInfoModal">More info</button>
           </div>
           <br />
           <div class="row-fluid" id="three-hotel">
             <img class="hotel-img img-responsive img-rounded" src="images/Hotel-Galveston.jpg" />
               <h4 class="hotel-title"><span class="hotel-location"></span> Hotel Galveston</h4>
-              <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal">More info</button>
+              <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal" data-target="#moreInfoModal">More info</button>
           </div>
           <br />
           <div class="row-fluid" id="two-hotel" >
             <img class="hotel-img img-responsive img-rounded" src="images/Hotel-Scorerooms.jpg" />
               <h4 class="hotel-title"><span class="hotel-location"></span> Hotel Score Rooms</h4>
-              <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal">More info</button>
+              <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal" data-target="#moreInfoModal">More info</button>
           </div>
           <br />
           <div class="row-fluid" id="one-hotel">
             <img class="hotel-img img-responsive img-rounded" src="images/rooftop2.jpg" />
               <h4 class="hotel-title"><span class="hotel-location"></span> Rooftop Hotel</h4>
-              <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal">More info</button>
+              <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal" data-target="#moreInfoModal">More info</button>
           </div>
           </div>
         </div>
 
     <!-- Advanced Search -->
     </div>
-    <div class="modal fade" id="myModal" data-backdrop="static">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Enter Check In &  Check Out Dates to Search</h4>
-        </div>
-        <div class="modal-body">
-            <div class="input-group">
-              <span class="input-group-addon" id="citySearch" style="size:1em">*City</span>
-              <input type="text" class="form-control" placeholder="City" aria-describedby="sizing-addon2" id="modalCity">
-            </div>
-            <div class="input-group">
-              <span class="input-group-addon" id="dateCheckIn" style="size:1em">*Check In Date</span>
-              <input type="text" class="form-control datepicker" placeholder="Check In Date" aria-describedby="sizing-addon2" id="modalCheckIn">
-            </div>
-            <div class="input-group">
-              <span class="input-group-addon" id="dateCheckOut" style="size:1em">*Check Out Date</span>
-              <input type="text" class="form-control datepicker" placeholder="Check Out Date" aria-describedby="sizing-addon2" id="modalCheckOut">
-            </div>
-              <!--
+      <div class="modal fade" id="myModal" data-backdrop="static">
+        <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Enter Check In &  Check Out Dates to Search</h4>
+          </div>
+          <div class="modal-body">
               <div class="input-group">
-              <input type="text" class="form-control" placeholder="What star hotels you are looking for?" aria-describedby="sizing-addon2">
-              -->
-            <div class="input-group">
-              <span class="input-group-addon"  id="starRating" style="size:1em">Star Ratings</span>
-              <div class="dropdown" >
-                <button class="btn btn-default dropdown-toggle" type="button" id="buttondropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  Select Star Rating
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="uldropdownMenu1">
-                  <li><a href="#">&nbsp 1 Star Hotels</a></li>
-                  <li><a href="#">&nbsp 2 Star Hotels</a></li>
-                  <li><a href="#">&nbsp 3 Star Hotels</a></li>
-                  <li><a href="#">&nbsp 4 Star Hotels</a></li>
-                  <li><a href="#">&nbsp 5 Star Hotels</a></li>
-                </ul>
+                <span class="input-group-addon" id="citySearch" style="size:1em">*City</span>
+                <input type="text" class="form-control" placeholder="City" aria-describedby="sizing-addon2" id="modalCity">
               </div>
-            </div>
-            <div class="input-group">
-              <span class="input-group-addon" id="Amenities" style="size:1em">Amenities</span>
-              <div class="dropdown" >
-                <button class="btn btn-default dropdown-toggle multiselect" type="button" id="buttondropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  Select Amenities
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="uldropdownMenu1" multiple="multiple">
-                  <li><a href="#">&nbsp Free Wi-fi</a></li>
-                  <li><a href="#">&nbsp Swimming Pool</a></li>
-                  <li><a href="#">&nbsp In-Room Service</a></li>
-                </ul>
+              <div class="input-group">
+                <span class="input-group-addon" id="dateCheckIn" style="size:1em">*Check In Date</span>
+                <input type="text" class="form-control datepicker" placeholder="Check In Date" aria-describedby="sizing-addon2" id="modalCheckIn">
               </div>
-            </div>
-            <div class="input-group">
-              <span class="input-group-addon" id="Price" style="size:1em">Price ($)/ Night</span>
-              <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle multiselect" type="button" id="buttondropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  Select Price Range
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="uldropdownMenu3" multiple="multiple">
-                  <li><a href="#">&nbsp $0 - $50 &nbsp</a></li>
-                  <li><a href="#">&nbsp $50 - $100 &nbsp</a></li>
-                  <li><a href="#">&nbsp >$100 &nbsp</a></li>
-                </ul>
+              <div class="input-group">
+                <span class="input-group-addon" id="dateCheckOut" style="size:1em">*Check Out Date</span>
+                <input type="text" class="form-control datepicker" placeholder="Check Out Date" aria-describedby="sizing-addon2" id="modalCheckOut">
               </div>
-            </div>
-          <p>
-            Please enter the mandatory values (marked * ) to search. 
-          </p>
+                <!--
+                <div class="input-group">
+                <input type="text" class="form-control" placeholder="What star hotels you are looking for?" aria-describedby="sizing-addon2">
+                -->
+              <div class="input-group">
+                <span class="input-group-addon"  id="starRating" style="size:1em">Star Ratings</span>
+                <div class="dropdown" >
+                  <button class="btn btn-default dropdown-toggle" type="button" id="buttondropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Select Star Rating
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="uldropdownMenu1">
+                    <li><a href="#">&nbsp 1 Star Hotels</a></li>
+                    <li><a href="#">&nbsp 2 Star Hotels</a></li>
+                    <li><a href="#">&nbsp 3 Star Hotels</a></li>
+                    <li><a href="#">&nbsp 4 Star Hotels</a></li>
+                    <li><a href="#">&nbsp 5 Star Hotels</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id="Amenities" style="size:1em">Amenities</span>
+                <div class="dropdown" >
+                  <button class="btn btn-default dropdown-toggle multiselect" type="button" id="buttondropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Select Amenities
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="uldropdownMenu1" multiple="multiple">
+                    <li><a href="#">&nbsp Free Wi-fi</a></li>
+                    <li><a href="#">&nbsp Swimming Pool</a></li>
+                    <li><a href="#">&nbsp In-Room Service</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id="Price" style="size:1em">Price ($)/ Night</span>
+                <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle multiselect" type="button" id="buttondropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Select Price Range
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="uldropdownMenu3" multiple="multiple">
+                    <li><a href="#">&nbsp $0 - $50 &nbsp</a></li>
+                    <li><a href="#">&nbsp $50 - $100 &nbsp</a></li>
+                    <li><a href="#">&nbsp >$100 &nbsp</a></li>
+                  </ul>
+                </div>
+              </div>
+            <p>
+              Please enter the mandatory values (marked * ) to search. 
+            </p>
+          </div>
+          <div class="modal-footer">
+            <p id="modalFooterMessage">For best search result enter all values !!</p>
+            <button class="btn btn-info btn-group-sm" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary btn-group-sm" id="modalSearch">Search</button>
+          </div>
         </div>
-        <div class="modal-footer">
-          <p id="modalFooterMessage">For best search result enter all values !!</p>
-          <button class="btn btn-info btn-group-sm" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary btn-group-sm" id="modalSearch">Search</button>
         </div>
       </div>
-    </div>
-  </div>
   </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
