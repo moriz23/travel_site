@@ -10,7 +10,7 @@
   <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-static-top">
+  <nav id="nav" class="navbar navbar-inverse navbar-static-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -92,15 +92,15 @@
         <div class="panel-body">
           <div class="form-group">
             <div class="row-fluid">
-              <input type="checkbox" value=""> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <input type="checkbox" value="" id="five"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <br>
-              <input type="checkbox" value=""> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              <input type="checkbox" value="" id="four"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
               <br>
-              <input type="checkbox" value=""> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              <input type="checkbox" value="" id="three"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
               <br>
-              <input type="checkbox" value=""> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>  <span class="glyphicon glyphicon-star-empty"></span> <span class="glyphicon glyphicon-star-empty"></span> <span class="glyphicon glyphicon-star-empty"></span>
+              <input type="checkbox" value="" id="two"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>  <span class="glyphicon glyphicon-star-empty"></span> <span class="glyphicon glyphicon-star-empty"></span> <span class="glyphicon glyphicon-star-empty"></span>
               <br>
-              <input type="checkbox" value=""> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              <input type="checkbox" value="" id="one"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
             </div>
           </div>
         </div>
@@ -153,31 +153,31 @@
     <div class="panel panel-default hotel-search">
       <div class="panel-heading" id="panel-title">Hotels</div>
         <div class=" panel-body">
-          <div class="row-fluid">
+          <div class="row-fluid" id="five-hotel">
             <img class="hotel-img img-responsive img-rounded" src="images/grand.png" />
               <h4 class="hotel-title"><span class="hotel-location"></span> Grand Master Flex</h4>
               <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal">More info</button>
           </div>
           <br/>
-          <div class="row-fluid">
+          <div class="row-fluid" id="four-hotel">
             <img class="hotel-img img-responsive img-rounded" src="images/feat-Florida.jpg" />
               <h4 class="hotel-title"><span class="hotel-location"></span> Feat Florida</h4>
               <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal">More info</button>
           </div>
           <br />
-          <div class="row-fluid">
+          <div class="row-fluid" id="three-hotel">
             <img class="hotel-img img-responsive img-rounded" src="images/Hotel-Galveston.jpg" />
               <h4 class="hotel-title"><span class="hotel-location"></span> Hotel Galveston</h4>
               <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal">More info</button>
           </div>
           <br />
-          <div class="row-fluid">
+          <div class="row-fluid" id="two-hotel" >
             <img class="hotel-img img-responsive img-rounded" src="images/Hotel-Scorerooms.jpg" />
               <h4 class="hotel-title"><span class="hotel-location"></span> Hotel Score Rooms</h4>
               <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal">More info</button>
           </div>
           <br />
-          <div class="row-fluid">
+          <div class="row-fluid" id="one-hotel">
             <img class="hotel-img img-responsive img-rounded" src="images/rooftop2.jpg" />
               <h4 class="hotel-title"><span class="hotel-location"></span> Rooftop Hotel</h4>
               <button class="btn btn-success" type="button" href="#more-info" data-toggle="modal">More info</button>
@@ -200,6 +200,7 @@
   <script type="text/javascript" src="js/picker.time.js"></script>
   <script type="text/javascript" src="js/legacy.js"></script>
   <script type="text/javascript" src="js/hotelsite.js"></script>
+  <script type="text/javascript" src="js/ratings.js"></script>
   <script type="text/javascript" src="js/datepicker.js"></script>
 </body>
 </html>

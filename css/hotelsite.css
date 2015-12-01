@@ -3,11 +3,11 @@
   overflow: hidden; 
 }
 .carousel .item {
-  height: 618px;
+  height: 716px;
 }
 .carousel-inner > .item > img {
   min-width: 100%;
-  height: 618px;
+  height: 716px;
 }
 
 h3 {
@@ -33,6 +33,10 @@ h3 {
 }
 
 /* Navbar */
+#nav {
+  position: fixed;
+  width: 100%;
+}
 .alert {
   position: relative;
   left: 65px;
